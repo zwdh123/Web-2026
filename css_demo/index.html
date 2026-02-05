@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Zipi CSS</title>
+        <link rel = "stylesheet" href = "css/style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+        <style>
+            #green-smol-right {/*singular style, can only be one of each name*/
+                color:green;
+                text-align:right;
+                font-size:xx-small;
+            }
+
+            .class-ex {/*entire class that is set becomes this*/
+                color:aquamarine;
+                text-align:center;
+            }
+
+            h2 {/*all h2 sized fonts (all with <h2> syntax) follow this*/
+                background-color:rgb(36, 164, 168);
+            }
+
+            /*body {
+                background-color:beige;
+            }*/
+        </style>
+    </head>
+    <body>
+        <div class = "container">
+            <ul class = "nav">
+            <li><a href = "index.html">HomerSimpson</a></li>
+            <li><a href = "about.html">Abuot</a></li>
+            <li><a href = "contact.html">connocting poopie (zimo reference)</a></li>
+            </ul>
+        </div>
+
+        <h1>we learn about css, peak coding language</h1>
+        <h2>How we add style with INLINE Css. (important?)</h2>
+        <p style = "color:lightgoldenrodyellow;">I want this text to be blu.</p>
+        <p style = "color:crimson;">I very much failed. look closely above. (this is crimson hopefully)</p>
+        <p style = "color:orange; text-align:center; font-size:99px;">I want this text to be orang, centered, and masseve</p>
+
+        <h2>This is how we use fancy INTERNAL styling</h2>
+        <p id = "green-smol-right">I want this text to be green, smol, and on the right</p>
+        <p class = "class-ex">this is part of a class</p>
+        <h3 class = "class-ex">dis too</h3>
+        <h4 class = "class-ex">unfortunately this smol one too</h4>
+
+        <h2>This is how we use EXTERNAL Styling</h2>
+        <h2>This is how we use divs and spans</h2>
+        <p>This is not part of my div</p>
+        <div class = "div">
+            <p>this paragraph is part of my div</p>
+            <p>this 1 too</p>
+            <img src = "images/memeforwebsite.jpg" width = "1000px" height = "500px">
+            <p>this is how spans work</p>
+            <p>this <span class = "span1">word</span> is hopefully different from <span class = "span2">this</span> word</p>
+        </div>
+
+        <h2>this is how we change the font</h2>
+        <p style = "font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">different font</p>
+        <p style = "font-family: cursive;">different font</p>
+        <p style = "font-family: Audiowide">imported font</p>
+    </body>
+</html>

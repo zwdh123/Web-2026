@@ -1,0 +1,25 @@
+/*make assignment field bigger*/
+input#assignment_title{width:300px !important;}
+
+/*For the grading notes*/
+div#eps-grades-note ul#eps-grades-notes-list {
+  margin:0px;
+  padding-left:20px;
+}
+#assignment_machine_codes li {
+    list-style-type:none;
+}
+#assignment_machine_codes button {
+    width:35px;
+    border-radius: 4px;
+}
+/*
+.question .links a {
+left: 0px;
+}
+select.module_item_select {
+width: 400px;
+min-height: 200px;
+max-height: 400px;
+}
+*/

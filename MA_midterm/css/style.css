@@ -1,0 +1,105 @@
+body {
+    /*background-color: powderblue;*/
+    margin: 0;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(75, 130, 161, 0.75)), url("/MA_midterm/images/Dog1.png");
+    background-size: auto, 300px 300px;
+    background-repeat: no-repeat, repeat;
+    background-position: center, 0 0;
+
+    animation: moveBg 20s linear infinite;
+}
+
+@keyframes moveBg {
+    from {
+        background-position: center, 0 0;
+    }
+    to {
+        background-position: center, 1000px 0;
+    }
+}
+
+.nav_design {
+    list-style: none;
+    text-align: center;
+}
+.nav_design li {
+    display: inline;
+    margin-right: 25px; /*space between all the elements*/
+}
+
+.container {
+    width: 350px; /*width of bar*/
+    margin: 0 auto; /*auto spacing on all sides*/
+    padding: 10px;
+    background-color: blanchedalmond; /*color of the square*/
+    border: 5px dashed black; /*border around the square*/ /*border types: dotted, dashed, solid, double, groove, ridge, inset, outset, none, hidden*/
+}
+
+.bodytext {
+    text-align: center;
+    margin-left: 25px;
+    font-size: 25px;
+}
+.bodytextleft {
+    text-align: left;
+    margin-left: 30px;
+    font-size: 25px;
+    /*color: chartreuse;*/
+}
+
+/*
+.div {
+    background-color: antiquewhite;
+}*/
+
+/*one-line image gallery*/
+.imageGallery {
+    display: flex;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1frs));
+    gap: 16px;
+    padding: 20px;
+}
+
+.image {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.75);
+    color: #fff;
+    padding: 16px;
+
+    transform: translateY(-100%);
+    opacity: 0;
+    
+    transition: transform 0.35s ease, opacity 0.35s ease;
+    overflow-y: auto;
+}
+.image:hover .overlay {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/*styling of h3 and p tags*/
+/* fixes h3 and p tag sizes, despite the style tag in the gallery.html
+.overlay h3 {
+    margin-top: 0;
+    font-size: 1.1rem;
+}
+.overlay p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+*/

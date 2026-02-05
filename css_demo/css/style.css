@@ -1,0 +1,42 @@
+body {
+    background-color: powderblue;
+}
+
+.container {
+    width: 500px; /*width of bar*/
+    margin: 0 auto; /*auto spacing on all sides*/
+    padding: 50px;
+    background-color: blanchedalmond; /*color of the square*/
+    border: 5px solid black; /*border around the square*/ /*border types: dotted, dashed, solid, double, groove, ridge, inset, outset, none, hidden*/
+}
+.nav {/*removing bullet points and centering on top*/
+    list-style: none;
+    text-align: center;
+}
+
+.nav li {/*making it all into one line*/
+    display: inline;
+    margin-right: 25px; /*space between all the elements*/
+}
+
+.div {
+    background-color: bisque;
+    text-align: center;
+    color: darkcyan;
+}
+
+/*this doesn't work*/
+/*
+.div li {
+    display: inline;
+    margin-right: 67px;
+}*/
+
+.span1 {/*the <span> syntax while within a <p> will make it so the word(s) in the <span> are different just within <span></span>*/
+    color:burlywood;
+    font-size: 100px;
+}
+.span2 {
+    color:darkturquoise;
+    font-size: 25px;
+}
