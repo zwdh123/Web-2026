@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Are you smarter than a potato?</title>
+    <link rel = "stylesheet" href = "css/style.css">
+    <script type = "text/javascript" src = "js/script.js"></script>
+</head>
+<body>
+    <div class = "container">
+        <ul class = "nav">
+        <li><a href = "index.html">Intro</a></li>
+        <li><a href = "about.html">About</a></li>
+        <li><a href = "gallery.html">Gallery</a></li>
+        <li><a href = "contact.html">Contact</a></li>
+        <li><a href = "potato.html">potato</a></li>
+        </ul>
+    </div>
+
+    <div class = "bodyleft">
+        <h1>We will be playing.....</h1>
+        <h1 style = "margin-right: 0px">ARE YOU SMARTER THAN A <s>5th grader</s> POTATO</h1>
+        <!-- add questions, buttons (with alerts b4 they open) that show answers -->
+         <button onclick = "alert('This will show you the answer'); document.getElementById('add').innerHTML = 1 + 2;" style = "width: 400px; height: 200px; font-size: 60px; text-align: center;">What is 1+1?</button>
+         <p id = "add" style = "font-size: 50px;">Answer will show here</p>
+
+         <p>Did you get it correct?</p>
+         <button onclick = "alert('Nice! You are smarter than a potato');" style = "width: 100px; height: 50px;">Yes!</button>
+         <button onclick = "alert('You suck. How do you not know this? Even potatoes know addition, they add potato-tubers. Unless you didn\'t know that, which means u should read the About section.');" style = "width: 100px; height: 50px;">No</button>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+         <button onclick = "alert('This will reveal the answer'); document.getElementById('stages').innerHTML = '5';" style = "width: 600px; height: 200px; font-size: 50px; text-align: center;">How many main stages do potatoes have?</button>
+         <p id = "stages" style = "font-size: 50px">How many?🤔 Hint: read the about section</p>
+         
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>    
+         
+         <h1>AND NOW</h1>
+         <h1>Time for the QUESTION OF THE AGES:</h1>
+         <h1>HOW MANY WAYS ARE THERE TO EAT POTATOES (in America)?</h1>
+         <h3>Now, you might be saying there's a LOT. However, that is WRONG.</h3>
+         <h3>HINT: look at previous hints.</h3>
+
+         <button onclick = "theUltimateQuestion()" style = "width: 600px; height: 200px; font-size: 60px; text-align: center;">What will it be?</button>
+         <p id = "theUltimateAnswer">This is blow your mind.</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,70 @@
+body {
+    background-color:cadetblue
+}
+
+
+.container {
+    width: 350px; /*width of bar*/
+    margin: 0 auto; /*auto spacing on all sides*/
+    padding: 10px;
+    background-color: blanchedalmond; /*color of the square*/
+    border: 5px dashed black; /*border around the square*/ /*border types: dotted, dashed, solid, double, groove, ridge, inset, outset, none, hidden*/
+}
+.nav {/*removing bullet points and centering on top*/
+    list-style: none;
+    text-align: center;
+}
+.nav li {/*making it all into one line*/
+    display: inline;
+    margin-right: 25px; /*space between all the elements*/
+}
+
+.body {
+    font-size: 30px;
+    text-align: center;
+}
+
+.bodyleft {
+    font-size: 30px;
+    text-align: left;
+    margin-left: 575px;
+    margin-right: 575px;
+}
+
+.imageGallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 16px;
+    padding: 20px;
+}
+
+.image {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.75);
+    color: #fff;
+    padding: 16px;
+
+    transform: translateY(-100%);
+    opacity: 0;
+    
+    transition: transform 0.35s ease, opacity 0.35s ease;
+    overflow-y: auto;
+}
+.image:hover .overlay {
+    transform: translateY(0);
+    opacity: 1;
+}
